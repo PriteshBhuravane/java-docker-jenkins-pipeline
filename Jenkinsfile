@@ -4,16 +4,10 @@ pipeline {
     environment {
         IMAGE_NAME = 'java-hello'
         IMAGE_TAG = 'v1'
-        DOCKER_HUB_USER = 'your-dockerhub-username' // change this
+        DOCKER_HUB_USER = 'admin' // optional
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/PriteshBhuravane/java-docker-jenkins-pipeline.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
