@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/java-docker-jenkins-pipeline.git'
+                git 'https://github.com/PriteshBhuravane/java-docker-jenkins-pipeline.git'
             }
         }
 
